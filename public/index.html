@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="/api/productos" method="POST" id="formProductos">
+      <input
+        name="nombre"
+        type="text"
+        class="feedback-input"
+        placeholder="Nombre"
+        id="producto"
+      />
+      <input
+        name="precio"
+        type="number"
+        class="feedback-input"
+        placeholder="Precio"
+        id="precio"
+      />
+      <textarea
+        name="thumbnail"
+        class="feedback-input"
+        placeholder="Link de imagen"
+        id="imagen"
+      ></textarea>
+      <input type="submit" value="ENVIAR" />
+    </form>
+  </body>
+  <!--script src="/socket.io/socket.io.js"></script>
+  <script src="./js/main.js"></script-->
+</html>
